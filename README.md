@@ -1,6 +1,20 @@
 # Roman Numeral Converter
 
-This web application converts a number into the equivalent Roman numeral. Roman Numerals are a numeral system that originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers are written with combinations of letters from the Latin alphabet, each letter with a fixed integer value.
+This web application converts a number (Arabic numeral) into the equivalent Roman numeral. The Roman numeral system originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers are written with combinations of letters from the Latin alphabet, each letter with a fixed integer value.
+
+Below is a table of the seven most common Roman numeral characters:
+
+| Roman Numeral | Value |
+|---------------|-------|
+| I             | 1     |
+| V             | 5     |
+| X             | 10    |
+| L             | 50    |
+| C             | 100   |
+| D             | 500   |
+| M             | 1000  |
+
+These characters can be combined to create other numbers. For example, IV represents 4, and XVI represents 16.
 
 ## Live Demo
 
@@ -17,7 +31,6 @@ This project is hosted live via GitHub Pages:  [roman-numeral-converter](https:/
 1. Enter any number into the input field.
 2. Click the "Convert" button or press [enter] to convert the number.
 3. If a number between 1 and 3999 was entered, the Roman numeral equivalent will be displayed.
-  - Testing this sub bullet here.
 
 ## Project Structure
 
