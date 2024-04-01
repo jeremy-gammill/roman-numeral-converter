@@ -1,0 +1,81 @@
+<!--
+  Filename: index.html
+  Project: Roman Numeral Converter
+  Live Demo: https://jeremy-gammill.github.io/roman-numeral-converter/
+
+  Author: Jeremy Gammill | github.com/jeremy-gammill
+  Date Created: March 31, 2024
+  Last Modified: April 1, 2024
+  License: MIT
+  
+  Description:
+    Developed for the freeCodeCamp JavaScript Algorithms and Data Structures certification.
+  
+    Key Features:
+    - Converts numeric input to Roman numerals within the range of 1 to 3999, focusing on common use cases.
+    - Displays an appropriate feedback message to the user when receiving invalid input.
+    - Utilizes a recursive function for conversion. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Roman Numeral Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="container-title">
+            <p class="title">ROMAN<br>NUMERAL<br>CONVERTER</p>
+        </div>
+        <div class="container-primary">
+            <label for="number" class="directions">Enter a number to convert:</label>
+            <input id="number" type="number" />
+            <button id="convert-btn">Convert</button>
+            <div id="result"></div>
+        </div>
+        <div id="output" class="container-primary hidden">
+        </div>
+        <div class="container-secondary">
+            <p class="definition">
+                <strong>Roman Numerals</strong> are a numeral system that originated in ancient Rome and
+                remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers are
+                written with combinations of letters from the Latin alphabet, each letter with a fixed integer value.
+            </p>
+            <p class="definition">
+                Modern style uses only these <strong>seven characters</strong>:
+            </p>
+            <table id="roman-numerals">
+                <tr>
+                    <th>I</th>
+                    <th>V</th>
+                    <th>X</th>
+                    <th>L</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>M</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>500</td>
+                    <td>1000</td>
+                </tr>
+            </table>
+            <p class="citation">
+                <cite>source: <a href="https://en.wikipedia.org/wiki/Roman_numerals">Wikipedia</a></cite>
+            </p>
+        </div>
+    </main>
+</body>
+
+<!-- Due to a quirk with the freeCodeCamp live editor, scripts must be placed at the end of the HTML; 'defer' is not sufficient. -->
+<script src="script.js" defer></script>
+
+</html>

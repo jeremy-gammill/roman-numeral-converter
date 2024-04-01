@@ -1,0 +1,216 @@
+/**
+ * Filename: styles.css
+ * Project: Roman Numeral Converter
+ * Live Demo: https://jeremy-gammill.github.io/roman-numeral-converter/
+
+ * Author: Jeremy Gammill | github.com/jeremy-gammill
+ * Date Created: March 31, 2024
+ * Last Modified: April 1, 2024
+ * License: MIT
+ *
+ * Description:
+ *   Developed for the freeCodeCamp JavaScript Algorithms and Data Structures certification.
+ *  
+ *   Key Features:
+ *   - Converts numeric input to Roman numerals within the range of 1 to 3999, focusing on common use cases.
+ *   - Displays an appropriate feedback message to the user when receiving invalid input.
+ *   - Utilizes a recursive function for conversion.
+ */
+
+/* Colors */
+:root {
+  /* --dark-purple: #64257d; */
+  --dark-purple: #5d0a91;
+  --medium-purple: #9e46d4;
+  --light-purple: #e9d7f5;
+
+  --white: #ffffff;
+  --light-gray: #bfbfbf;
+  --medium-gray: #949494;
+
+  --light-red-invalid: #f7b0ab;
+  --dark-red-invalid: #ab1d12;
+
+  --button: hsl(97, 87%, 35%);
+  --button-hover: hsl(97, 87%, 30%);
+}
+
+
+/* Page Layout */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--light-purple);
+}
+
+body {
+    width: 90%;
+    min-width: 300px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 80vh;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Content */
+div.container-title p {
+    color: var(--dark-purple);
+    font-size: 3em;
+    text-align: center;
+    display: block;
+    margin-bottom: 0;
+}
+
+div.container-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: var(--white);
+    color: var(--medium-purple);
+
+    padding: 40px 50px 40px 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+label.directions {
+    font-family: Arial, Verdana, sans-serif;
+    color: var(--medium-purple);
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#number {
+    width: 100%;
+    border: 2px solid var(--light-purple);
+    outline: none;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: var(--medium-purple);
+    text-align: center;
+}
+
+#number:focus {
+    border-color: var(--medium-purple);
+}
+
+#convert-btn {
+    margin-top: 20px;
+    padding: 6px 30px;
+    width: 100%;
+    font-size: 1.3em;
+    font-family: Arial, Verdana, sans-serif;
+
+    background-color: var(--button);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#convert-btn:hover {
+    background-color: var(--button-hover);
+}
+
+#output {
+    padding: 30px;
+}
+
+#output.invalid-number {
+    background-color: var(--dark-red-invalid);
+    color: var(--white);
+}
+
+#output p {
+    margin: 0;
+    padding: 0;
+}
+
+#output .roman-numeral {
+    font-size: 2em;
+}
+
+div.container-secondary {
+    width: 100%;
+    padding: 5px 30px;
+    border-radius: 5px;
+
+    background-color: var(--dark-purple);
+    color: var(--light-purple);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.25em;
+
+    margin-top: 20px;
+}
+
+p.definition strong {
+    color: var(--white);
+}
+
+table#roman-numerals {
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    border: 1px solid var(--light-purple);
+    border-radius: 5px;
+    padding: .8em .8em .8em .3em;
+    /* margin-bottom: 1em; */
+}
+
+table#roman-numerals th {
+    font-size: 1.25em;
+    font-weight: bold;
+    width: 14.2857%;
+}
+
+
+/* Source Citation */
+p.citation {
+    text-align: right;
+    margin-top: 0.4em;
+}
+
+cite {
+    font-size: 0.8em;
+    font-style: normal;
+}
+
+cite a {
+    font-style: italic;
+}
+
+cite a:link,
+cite a:visited {
+    text-decoration: none;
+    color: var(--light-purple);
+}
+
+cite a:active,
+cite a:hover {
+    color: var(--white);
+}
+
+
+/* Element Display */
+.hidden, div.hidden {
+    display: none;
+}
