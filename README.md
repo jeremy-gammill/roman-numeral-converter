@@ -1,6 +1,6 @@
-# Palindrome Checker
+# Roman Numeral Converter
 
-This web application checks whether a given input is a palindrome. A palindrome is a word, sentence, verse, or number that reads the same backward or forward. Example words would be madam and racecar. 
+This web application converts a number into the equivalent Roman numeral. Roman Numerals are a numeral system that originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers are written with combinations of letters from the Latin alphabet, each letter with a fixed integer value.
 
 ## Live Demo
 
