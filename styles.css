@@ -19,7 +19,6 @@
 
 /* Colors */
 :root {
-  /* --dark-purple: #64257d; */
   --dark-purple: #5d0a91;
   --medium-purple: #9e46d4;
   --light-purple: #e9d7f5;
@@ -121,7 +120,7 @@ label.directions {
     font-family: Arial, Verdana, sans-serif;
 
     background-color: var(--button);
-    color: white;
+    color: var(--white);
     border: 0;
     border-radius: 5px;
 
@@ -174,7 +173,6 @@ table#roman-numerals {
     border: 1px solid var(--light-purple);
     border-radius: 5px;
     padding: .8em .8em .8em .3em;
-    /* margin-bottom: 1em; */
 }
 
 table#roman-numerals th {
