@@ -18,7 +18,7 @@ These characters can be combined to create other numbers. For example, IV repres
 
 ## Live Demo
 
-This project is hosted live via GitHub Pages:  [roman-numeral-converter](https://jeremy-gammill.github.io/roman-numeral-converter/)
+You can try out the validator live on GitHub Pages:  [roman-numeral-converter](https://jeremy-gammill.github.io/roman-numeral-converter/)
 
 ## Features
 
